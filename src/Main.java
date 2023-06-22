@@ -33,7 +33,27 @@ public class Main {
         int onTheStudent = Leaflets / students;
         System.out.println("На каждого ученика рассчитано " + onTheStudent + " листов бумаги");
     }
+    public static void task3(){
 
+        byte bottlesTwoMinutes = 16;
+        byte justAMinute = 16/2;
+
+        byte twentyMinutes = 20;
+        short minutesPerDay = 1440;
+        short minutesThreeDays = 4320;
+        int   minutseMonthOfApril = 43200;
+
+        int inTwentyMinutes = justAMinute * twentyMinutes;
+        int inPerDay = justAMinute * minutesPerDay;
+        int inThreeDayss = justAMinute * minutesThreeDays;
+        int forTheMonthOfApril = justAMinute * minutseMonthOfApril;
+
+        System.out.println("За 20 минут, машина производит " + inTwentyMinutes + " Штук бутылок");
+        System.out.println("За один день, машина производит " + inPerDay + " Штук бутылок");
+        System.out.println("За три дня, машина производит " + inThreeDayss + " Штук бутылок");
+        System.out.println("За Апрель месяц, машина производит " + forTheMonthOfApril + " Штук бутылок");
+
+    }
 
 
 
