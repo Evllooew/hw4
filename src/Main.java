@@ -3,6 +3,10 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
+        task5();
+        task6();
+        task7();
 
     }
         public static void task1(){
@@ -54,6 +58,59 @@ public class Main {
         System.out.println("За Апрель месяц, машина производит " + forTheMonthOfApril + " Штук бутылок");
 
     }
+    public static void task4(){
+
+        byte cansOfPaint = 120;
+        int classroom = cansOfPaint / 6;
+        int white = 2 * classroom;
+        int brown = 4 * classroom;
+
+        System.out.println( "В школе, где " + classroom + " классов, нужно " + white + " банок белой краски и " + brown + " банок коричневой краски");
+}
+    public static void task5(){
+        byte bananas = 5;
+        byte bananaGram = 80;
+        short milk = 2;
+        byte milk100MlGram = 105;
+        byte iceCreamBriquette = 2;
+        short iceCreamBriquettegram = 2 * 100;
+        byte eggs = 4;
+        byte eggGram = 70;
+
+        int cocktail = ((bananas * bananaGram) + (milk * milk100MlGram) + (iceCreamBriquette + iceCreamBriquettegram) +
+                (eggs * eggGram));
 
 
+    System.out.println(cocktail + " грамм в спорткоктейле");
+
+    short oneKilogram = 1000;
+    float aKilogramInACocktail = cocktail / 1000f ;
+
+    System.out.println(aKilogramInACocktail + " Кг в спорткоктейле");
+
+}
+    public static void task6(){
+        short sevenKilogram = 7000;
+        short TheFirstOption = 250;
+        short TheSecondOption = 500;
+        int twoHundreDandFiftyGram = sevenKilogram / TheFirstOption;
+        int fiveHundredRublesGram = sevenKilogram / TheSecondOption;
+        int averageNumberOfDays = twoHundreDandFiftyGram + fiveHundredRublesGram / 2;
+
+        System.out.println("Если по 250гр " + twoHundreDandFiftyGram + " дней");
+        System.out.println("Если по 500гр " + fiveHundredRublesGram + "дней");
+        System.out.println("В среднем " + averageNumberOfDays + " дней");
+    }
+    public static void task7(){
+        int masha = 67760;
+        int denis = 83690;
+        int kristina = 76230;
+        double masha1 = 67760 * 0.1;
+        double denis1 = 83690 * 0.1;
+        double kristina1 = 76230 * 0.1;
+
+        System.out.println("Маша теперь получает " + (masha + masha1) + " рублей. Годовой доход вырос на " + masha1 + " рублей ");
+        System.out.println("Денис теперь получает " + (denis + denis1) + " рублей. Годовой доход вырос на " + denis1 + " рублей ");
+        System.out.println("Кристина теперь получает " + (kristina + kristina1) + " рублей. Годовой доход вырос на " + kristina1 + " рублей ");
+    }
 }
